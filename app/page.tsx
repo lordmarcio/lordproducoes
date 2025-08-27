@@ -33,61 +33,9 @@ export default function Home() {
               </span>
             </h1>
             
-            <AnimatedText
-              text="Transformando ideias em experiências audiovisuais extraordinárias"
-              className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto"
-              delay={0.5}
-            />
           </motion.div>
 
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.5, delay: 1, type: "spring", stiffness: 100 }}
-            className="flex gap-6 mb-16"
-            style={{ filter: "url(#gooey)" }}
-          >
-            <MagneticButton className="bg-gradient-to-r from-violet-600 to-purple-600 text-white rounded-full">
-              Nossos Projetos
-            </MagneticButton>
-            <MagneticButton className="border-2 border-violet-600 text-white rounded-full hover:bg-violet-600/20">
-              Entre em Contato
-            </MagneticButton>
-          </motion.div>
 
-          <motion.div
-            initial={{ y: 100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
-            className="grid md:grid-cols-3 gap-8 max-w-6xl w-full mt-20"
-          >
-            <PremiumCard>
-              <h3 className="text-2xl font-bold mb-4 font-space-grotesk">
-                <span className="text-violet-400">Cinema</span> Digital
-              </h3>
-              <p className="text-gray-400">
-                Produção cinematográfica com tecnologia de ponta e narrativas envolventes
-              </p>
-            </PremiumCard>
-
-            <PremiumCard>
-              <h3 className="text-2xl font-bold mb-4 font-space-grotesk">
-                <span className="text-purple-400">Motion</span> Graphics
-              </h3>
-              <p className="text-gray-400">
-                Animações e efeitos visuais que dão vida às suas ideias mais criativas
-              </p>
-            </PremiumCard>
-
-            <PremiumCard>
-              <h3 className="text-2xl font-bold mb-4 font-space-grotesk">
-                <span className="text-pink-400">Brand</span> Films
-              </h3>
-              <p className="text-gray-400">
-                Conteúdo audiovisual que fortalece a identidade e presença da sua marca
-              </p>
-            </PremiumCard>
-          </motion.div>
         </section>
 
         <motion.section
