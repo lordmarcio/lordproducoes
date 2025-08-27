@@ -34,7 +34,6 @@ export default function MeshGradientBackground() {
           "#9333EA",
           "#000000",
         ]}
-        wireframe={true}
       />
     </div>
   );
